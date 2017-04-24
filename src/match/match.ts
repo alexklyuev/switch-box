@@ -27,8 +27,6 @@ type MethodFactories<I> = {
   [P in keyof I]: (value: any, resolved: boolean, methodFactories: MethodFactories<I>) => I[P];
 }
 
-let x: MethodDecorator
-
 
 function _caseFactory<B>(
   this: void,
