@@ -1,7 +1,7 @@
 import { match } from "./src";
 
 
-match(7)
+match('7')
 .case<number>(
   (value, matcher) => {matcher(typeof value === 'number')},
   value => console.info('this is number')
