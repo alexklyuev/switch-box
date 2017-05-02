@@ -8,7 +8,11 @@
     "experimentalDecorators": true,
     "removeComments": false,
     "noImplicitAny": false,
-    "lib": ["es6", "dom"]
+    "lib": ["es6", "dom"],
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    "types": ["jasmine"]
   },
   "exclude": [
     "node_modules"
